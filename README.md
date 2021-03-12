@@ -22,3 +22,21 @@ If you discover a security vulnerability within Lumen, please send an e-mail to 
 ## License
 
 The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+## install
+composer require flipbox/lumen-generator
+Configuration
+Inside your bootstrap/app.php file, add:
+
+$app->register(Flipbox\LumenGenerator\LumenGeneratorServiceProvider::class);
+Available Command
+
+composer require tiagomichaelsousa/laravelresources --dev
+
+//Publish configuration file
+$ php artisan vendor:publish --provider="tiagomichaelsousa\LaravelResources\LaravelResourcesServiceProvider" --tag="config"
+//Create the resources
+$ php artisan resources:create <model>
+//edit migrade tabel
+$ php artisan migrate
