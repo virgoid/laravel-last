@@ -35,8 +35,13 @@ Available Command
 composer require tiagomichaelsousa/laravelresources --dev
 
 //Publish configuration file
+``
 $ php artisan vendor:publish --provider="tiagomichaelsousa\LaravelResources\LaravelResourcesServiceProvider" --tag="config"
+``
+
 //Create the resources
 $ php artisan resources:create <model>
+    
+    
 //edit migrade tabel
 $ php artisan migrate
